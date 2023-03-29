@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components.jsx/Navbar';
+import Addbook from './Components.jsx/Addbook';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <browserRouter>
+      <Navbar>
+        <Routes>
+          <Route path='Addbooks'element={Addbook data}={(
+            genre:'',published:'',author:'',title:'',publishedby:''}
+            method
+          )}
+        </Routes>
+      </Navbar>
+      </browserRouter>
+
     </div>
   );
 }
